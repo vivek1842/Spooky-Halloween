@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Creepster', cursive;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.weather, .trivia {
+    margin: 1rem 0;
+}
+
+#spooky-sound-btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+#spooky-sound-btn:hover {
+    background-color: #e67e22;
+}
+
+.ghost {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    animation: floatGhost 5s infinite;
+}
+
+#ghost1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+#ghost2 {
+    top: 30%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+#ghost3 {
+    top: 40%;
+    left: 40%;
+    animation-delay: 4s;
+}
+
+@keyframes floatGhost {
+    0%, 100% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+}
